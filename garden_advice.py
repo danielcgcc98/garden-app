@@ -16,17 +16,29 @@ def get_season_advice(season):
 def get_plant_advice(plant_type):
     """Return gardening advice based on the type of plant."""
     if plant_type == "flower":
-        return "Use fertiliser to encourage blooms."
+        return "Use fertilizer to encourage blooms."
     elif plant_type == "vegetable":
         return "Keep an eye out for pests!"
     else:
         return "No advice for this type of plant."
 
 
+def get_watering_advice(plant_type):
+    """Return watering advice based on the type of plant."""
+    if plant_type == "flower":
+        return "Water flowers regularly, especially during hot weather."
+    elif plant_type == "vegetable":
+        return "Water vegetables deeply and keep the soil consistently moist."
+    else:
+        return "Check the specific watering needs of your plant."
+
+
 # Generate advice using the functions.
 season_advice = get_season_advice(season)
 plant_advice = get_plant_advice(plant_type)
+watering_advice = get_watering_advice(plant_type)
 
 # Display the gardening advice.
 print(season_advice)
 print(plant_advice)
+print(watering_advice)
